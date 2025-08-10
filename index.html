@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akhilesh Yadav — Pentester & Security Engineer</title>
+  <meta name="description" content="Akhilesh Yadav — Offensive security, web app pentests, API testing, cloud assessments. Authorized testing only." />
+  <!-- Tailwind Play CDN (fast prototype) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:title" content="Akhilesh Yadav — Pentester" />
+  <meta property="og:description" content="Offensive security, pentesting & vulnerability assessments." />
+  <link rel="icon" href="/favicon.png" />
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <!-- NAV / HEADER -->
+    <header class="flex items-center justify-between mb-12">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-md bg-gradient-to-br from-indigo-600 to-cyan-400 flex items-center justify-center font-bold">AY</div>
+        <div>
+          <h1 class="text-xl font-semibold">Akhilesh Yadav</h1>
+          <p class="text-xs text-gray-300">Offensive Security & Penetration Testing</p>
+        </div>
+      </div>
+      <a href="#contact" class="text-sm bg-indigo-600 px-4 py-2 rounded">Hire me</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="grid md:grid-cols-2 gap-8 items-center mb-12">
+      <div>
+        <h2 class="text-3xl font-extrabold leading-tight">I find, exploit, and help fix security weaknesses — web, API & cloud.</h2>
+        <p class="mt-4 text-gray-300">Specialities: web app pentests, API auth abuse, cloud misconfigurations, and pragmatic remediation guidance.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#cases" class="px-4 py-2 border rounded text-sm">See case studies</a>
+          <a href="#contact" class="px-4 py-2 bg-indigo-600 rounded text-sm">Request quote</a>
+        </div>
+
+        <ul class="mt-6 text-sm text-gray-300 space-y-2">
+          <li>🔧 Tools: Burp Suite, Nmap, Metasploit, OWASP ZAP, Ghidra</li>
+          <li>📜 Certifications: OSCP (or list yours), relevant training</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <div class="text-xs text-gray-400">Example quick report</div>
+        <div class="mt-3 text-white font-medium">External Web App Assessment</div>
+        <div class="text-sm text-gray-300 mt-2">Scope: authenticated + unauthenticated tests. Findings: 1 critical RCE (redacted), 2 high logic flaws.</div>
+        <div class="mt-4 text-xs text-gray-400">Deliverables: Redacted PDF report, PoC notes, remediation plan</div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="mb-12">
+      <h3 class="text-xl font-semibold mb-4">Services</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="p-4 bg-gray-800 rounded">
+          <div class="font-semibold">Web Application Pentest</div>
+          <div class="text-sm text-gray-300 mt-2">OWASP Top10, business logic, authenticated tests</div>
+        </div>
+        <div class="p-4 bg-gray-800 rounded">
+          <div class="font-semibold">API & Mobile</div>
+          <div class="text-sm text-gray-300 mt-2">Token abuse, object-level access, mobile reverse engineering</div>
+        </div>
+        <div class="p-4 bg-gray-800 rounded">
+          <div class="font-semibold">Cloud & Infra</div>
+          <div class="text-sm text-gray-300 mt-2">IAM reviews, misconfiguration scans, container security</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="cases" class="mb-12">
+      <h3 class="text-xl font-semibold mb-4">Case studies (redacted)</h3>
+      <div class="space-y-4">
+        <!-- Repeat cards or add more -->
+        <article class="p-4 bg-gray-800 rounded">
+          <div class="text-xs text-gray-400">Sector • SaaS</div>
+          <h4 class="font-semibold mt-1">Critical RCE in file parser — fixed within 48h</h4>
+          <p class="text-sm text-gray-300 mt-2">Summary: Unsafe deserialization in file upload. Delivered PoC + remediation. No live exploit was published.</p>
+          <div class="mt-3 flex gap-3 text-xs">
+            <a class="text-indigo-400" href="/reports/redacted-example.pdf" target="_blank">Download redacted report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mb-10">
+      <h3 class="text-xl font-semibold mb-4">Contact</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <p class="text-gray-300">Email: <a href="mailto:your-email@example.com" class="text-indigo-400">your-email@example.com</a></p>
+          <p class="text-gray-400 text-sm mt-3">I only accept authorized testing requests. Provide a short scope and proof of authorization.</p>
+        </div>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-gray-800 p-4 rounded">
+          <label class="text-xs text-gray-300">Name</label>
+          <input name="name" required class="w-full mt-1 p-2 rounded bg-gray-900 border" />
+          <label class="text-xs text-gray-300 mt-3">Email</label>
+          <input name="email" type="email" required class="w-full mt-1 p-2 rounded bg-gray-900 border" />
+          <label class="text-xs text-gray-300 mt-3">Scope / Message</label>
+          <textarea name="message" required class="w-full mt-1 p-2 rounded bg-gray-900 border h-28"></textarea>
+          <!-- honeypot -->
+          <input type="text" name="_gotcha" style="display:none" />
+          <button type="submit" class="mt-3 px-4 py-2 bg-indigo-600 rounded">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="text-xs text-gray-500">
+      <div>© <span id="year"></span> Akhilesh Yadav — Offensive Security & Pentesting</div>
+      <div class="mt-2">By submitting you confirm you are authorized to request testing for the target assets. I will not engage in any unauthorized testing.</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
